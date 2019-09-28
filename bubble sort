@@ -1,0 +1,10 @@
+def bubbleSort(li):
+    n = len(li)
+    for i in range(n):
+        for j in range(0, n-1):
+            if li[j] > li[j + 1]:
+                li[j], li[j + 1] = li[j + 1], li[j]
+    print(li)
+
+li=[8,9,5,46,4,5,26,4]
+bubbleSort(li)
