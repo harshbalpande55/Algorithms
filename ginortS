@@ -1,0 +1,18 @@
+s=str(input())
+l=[]
+u=[]
+p=[]
+o=[]
+
+for i in s:
+    if i.islower()==True:
+        l.append(i)
+    elif i.isupper()==True:
+        u.append(i)
+    elif 0<int(i)<10 and int(i)%2!=0 :
+        p.append(i)
+    else:
+        o.append(i)
+t = sorted(l)+sorted(u)+sorted(p) +sorted(o)
+for j in t:
+    print(j,end="")
